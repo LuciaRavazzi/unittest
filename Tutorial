@@ -1,0 +1,18 @@
+
+
+A test could be:
+- *Manual*: it occurs when you test your app by yourself (exploratory testing). Exploratory testing is a form of testing that is done without a plan. In an exploratory test, you’re just exploring the application. In order to do this, you have to take into account all the functionalities of 
+your app, set the input and output and understand if after some modification, the result remains the same. 
+- *Automated*: in order to automatize the previous process, a script could be written for this purpose. 
+
+There are two types of tests:
+- *Unit* tests a single component. 
+- *Integration* tests different components and the integration between them. 
+
+In general, the *unittest* module helps you to test your componenets comparing a fixed result with the output. 
+
+However, when tests are executed, it isn't necessary to import all things: so, it is possible to _simulate_ them as they
+are real objects. This can be done by means of the unittest.mock.Mock or unittest.mock.patch method: the first one simulate 
+your function, the second one is decorator (a function that takes in input a function and return another function). 
+The Mock() function must have all the functionalities that the original object has, otherwise it will not be able to simulate it; 
+it can simulate any object, like libraries, attributes, functions etc. 
